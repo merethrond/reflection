@@ -1,0 +1,46 @@
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+It shows the lines that were removed in the old files(by - symbol) and the lines that were added in the 
+new file(by + symbol). This feature allows us to see the difference (between a working version and a buggy version, for instance) in a trifle and reduces our work (of spotting the mistakes).
+    
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+    It helps track our learning curve.
+    
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+    Pros:
+    Manual commits allows the user to divide the commits into logical partitions which are easier to see for the user.
+    One needs to do proper consideration of the method to be used for the selecting commits, and maintain the method throughout the project; this practice justifies the purpose of the commits.
+
+    Cons:
+    If the commits are too big or too small; it defeats our purpose of having commits beacuse if the commits are too big then we have trouble deciphering the difference between them; and if they are very small, we have to do much more work.
+
+    So, in essence we need to make the size of the commits right, and mention each changes explicitly(And that itself depends on the work we are doing).
+
+
+Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+    In multiple files containing some code(where the files are deeply related to each other) such as html or the css files, the simultanous file commits become necessary.
+    Most of the google docs files are not related to each other(eg thw way html and css files are), so the commits of each file is done separately.
+
+How can you use the commands git log and git diff to view the history of files?
+
+    git log lists all the previous commit made to that file before the time of the current commit. We get all the commit listed as commit ids and provided with date and time, as well as any comments made by the user
+
+    we can use git diff to compare any two commits. Just paste the commit ids of the commits u want to compare.
+    Its shows the lines added and the lines removed; which helps to spot the difference between commit easily. 
+
+How might using version control make you more confident to make changes that could break something?
+
+    We can use the command "git checkout COMMIT_ID" to move the head to any commit.
+    Do this process repeatedly to find out which of the commit caused the bug.
+    Once the buggy commit is caught, we can use git diff to compare the buggy commit and the working commit to spot the differences.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Git can be used effectively while using different methods and decisions to implement a single problem.
+    Set up workspace has a colored representation of showing which commit we are currently using(by seeing the commit id) and whether any changes has been commited or not(look out for the astericks mark of the terminal prompt, if there it means that the change has not yet been committed).
