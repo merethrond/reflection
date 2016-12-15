@@ -1,3 +1,3 @@
 for i in range(10):
-	print i
-print "Invincible!!! vector"
+	print (i)
+print ("Invincible!!! vector")
